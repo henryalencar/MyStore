@@ -3,7 +3,7 @@
     "name": "my-app",
     "scheme": "your-app-scheme",
     "experiments": {
-    "typedRoutes": true
+      "typedRoutes": true
     },
     "slug": "my-app",
     "version": "1.0.0",
@@ -27,7 +27,8 @@
     },
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      "expo-font"
     ]
   }
 }
