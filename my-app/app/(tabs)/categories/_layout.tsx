@@ -4,18 +4,20 @@ export default function CategoriesLayout() {
   return (
     <Stack>
       <Stack.Screen
-        name="index"
-        options={{
+        name="index" options={{
           title: "Categorias",
+          headerShown: false,
         }}
       />
-
-      <Stack.Screen
+      <Stack.Screen 
         name="[id]"
         options={{
           title: "Categoria",
+          headerShown: true,
         }}
       />
     </Stack>
+
+  
   );
 }

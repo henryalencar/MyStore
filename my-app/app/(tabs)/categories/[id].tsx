@@ -4,7 +4,7 @@ import {
   FlatList,
 } from "react-native";
 
-import { useLocalSearchParams } from "expo-router";
+import { Stack, useLocalSearchParams } from "expo-router";
 
 import { getProductsByCategory } from "../../../services/product";
 
@@ -21,6 +21,12 @@ export default function CategoryScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Stack.Screen
+        options={{
+          title: "Categoria",
+          headerShown: true,
+        }}
+      />
       <Text style={styles.title}>
         Produtos da categoria
       </Text>
